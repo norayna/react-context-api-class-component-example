@@ -1,11 +1,16 @@
+import React from 'react'
 import UserContext from "./UserContext";
 
-const LoginInfo = () => {
-    return (
-        <UserContext.Consumer>
-            {(value) => <span>Logged in as {value}</span>}
-        </UserContext.Consumer>
-    )
+class LoginInfo extends React.Component {
+    render() {
+        return (
+            <UserContext.Consumer>
+                {(value) => <span>Logged in as {value}</span>}
+            </UserContext.Consumer>
+        )
+    }
+
+
 }
 
 export default LoginInfo
